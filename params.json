@@ -1,0 +1,6 @@
+{
+  "name": "InfoVis D3 project",
+  "tagline": "D3 project done within Human Computer Interaction & Information Visualization course, MoS in Engineering in Computer Science, Università degli Studi di Roma \"La Sapienza\" (A.Y. 2015/2016)",
+  "body": "### Abstract\r\n\r\n\r\n### Visualizations\r\nFor InfoVis part of the course project we chose a huge dataset that gathers tourism-related data from all around the world ([here]( https://knoema.com/WTODB2016/world-tourism-organization-database-2016) you can find the source). We made the following two visualizations on top of that:  \r\n1. [vis1]( )  \r\n2. [vis2]( )\r\n\r\n### Authors\r\nThis project has been developed by Giacomo Lanciano (@giacomolanciano) and Davide Mazza (@davidemazza).",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
