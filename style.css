@@ -1,0 +1,23 @@
+body{
+	background:#C9D6CF;
+}
+
+.svg_area{
+	background:white;
+}
+
+.red{
+	fill:red;
+}
+
+.green{
+	fill:green;
+}
+
+.blue{
+	fill:blue;
+}
+
+.buttons{
+	padding-left:270px;
+}
