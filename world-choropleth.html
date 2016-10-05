@@ -50,7 +50,7 @@
                 .legend(true)
                 .postUpdate(annotation);
 
-            d3.csv('data/output.csv', function(error, data) {
+            d3.csv('data/tourism_expenditure.csv', function(error, data) {
                 d3.select("#map")
                     .datum(data)
                     .call(worldmap.draw, worldmap);
