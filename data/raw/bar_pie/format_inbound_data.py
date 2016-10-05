@@ -45,7 +45,6 @@ with open(DATA_IN_FILE, "r") as data:
     output.write("\n" + iso_code + SEPARATOR + countryName + SEPARATOR + unit)
     
     while line is not "":
-        print line
         components = str(line).split(SEPARATOR)
         if components[DATA_COUNTRY] != countryName:
             # padd with SEPARATOR if missing values at the end of the row
