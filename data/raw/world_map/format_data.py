@@ -2,7 +2,7 @@
 
 START_YEAR = 1995
 END_YEAR = 2014
-ISO_IN_FILE = "iso_code.csv"
+ISO_IN_FILE = "../iso_code.csv"
 ISO_COUNTRY = 0
 ISO_CODE = 1
 DATA_IN_FILE = "ObservationData_ucyfav.csv"
