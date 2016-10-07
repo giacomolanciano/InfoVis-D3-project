@@ -1,438 +1,434 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<head>
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<title>TITOLO</title>
-</head>
-<body><br>
-<br>
-
-<font size="+3" color="#9A0002"> <center><b><u> TITOLO</b></u> </center></font>
-	<div id='country'>
-    <font size="4"> <right> <b>Choose a country for view the stat :<b> </center></font><br><br>
-    <select id ="List" onChange="calculate()">
-    <option selected disable>Choose a country ... </option>
-	<option value="AFG">Afghanistan</option>
-	<option value="ALB">Albania</option>
-	<option value="DZA">Algeria</option>
-	<option value="AGO">Angola</option>
-	<option value="AIA">Anguilla</option>
-	<option value="ATG">Antigua and Barbuda</option>
-	<option value="ARG">Argentina</option>
-	<option value="ARM">Armenia</option>
-	<option value="ABW">Aruba</option>
-	<option value="AUS">Australia</option>
-	<option value="AUT">Austria</option>
-	<option value="AZE">Azerbaijan</option>
-	<option value="BHS">Bahamas</option>
-	<option value="BHR">Bahrain</option>
-	<option value="BGD">Bangladesh</option>
-	<option value="BRB">Barbados</option>
-	<option value="BLR">Belarus</option>
-	<option value="BEL">Belgium</option>
-	<option value="BLZ">Belize</option>
-	<option value="BEN">Benin</option>
-	<option value="BMU">Bermuda</option>
-	<option value="BTN">Bhutan</option>
-	<option value="BOL">Bolivia</option>
-	<option value="BES">Bonaire</option>
-	<option value="BIH">Bosnia and Herzegovina</option>
-	<option value="BWA">Botswana</option>
-	<option value="BRA">Brazil</option>
-	<option value="BRN">Brunei Darussalam</option>
-	<option value="BGR">Bulgaria</option>
-	<option value="BFA">Burkina Faso</option>
-	<option value="BDI">Burundi</option>
-	<option value="KHM">Cambodia</option>
-	<option value="CMR">Cameroon</option>
-	<option value="CAN">Canada</option>
-	<option value="CPV">Cape Verde</option>
-	<option value="CAF">Central African Republic</option>
-	<option value="CHL">Chile</option>
-	<option value="CHN">China</option>
-	<option value="COL">Colombia</option>
-	<option value="COM">Comoros</option>
-	<option value="COG">Congo</option>
-	<option value="COD">Congo, the Democratic Republic of the</option>
-	<option value="CRI">Costa Rica</option>
-	<option value="CIV">Côte d'Ivoire</option>
-	<option value="HRV">Croatia</option>
-	<option value="CUB">Cuba</option>
-	<option value="CUW">Curaçao</option>
-	<option value="CYP">Cyprus</option>
-	<option value="CZE">Czech Republic</option>
-	<option value="DNK">Denmark</option>
-	<option value="DJI">Djibouti</option>
-	<option value="DMA">Dominica</option>
-	<option value="DOM">Dominican Republic</option>
-	<option value="ECU">Ecuador</option>
-	<option value="EGY">Egypt</option>
-	<option value="SLV">El Salvador</option>
-	<option value="EST">Estonia</option>
-	<option value="ETH">Ethiopia</option>
-	<option value="FJI">Fiji</option>
-	<option value="FIN">Finland</option>
-	<option value="FRA">France</option>
-	<option value="PYF">French Polynesia</option>
-	<option value="GAB">Gabon</option>
-	<option value="GMB">Gambia</option>
-	<option value="GEO">Georgia</option>
-	<option value="DEU">Germany</option>
-	<option value="GHA">Ghana</option>
-	<option value="GRC">Greece</option>
-	<option value="GRD">Grenada</option>
-	<option value="GTM">Guatemala</option>
-	<option value="GIN">Guinea</option>
-	<option value="GNB">Guinea-Bissau</option>
-	<option value="GUY">Guyana</option>
-	<option value="HTI">Haiti</option>
-	<option value="HND">Honduras</option>
-	<option value="HKG">Hong Kong</option>
-	<option value="HUN">Hungary</option>
-	<option value="ISL">Iceland</option>
-	<option value="IND">India</option>
-	<option value="IDN">Indonesia</option>
-	<option value="IRN">Iran</option>
-	<option value="IRQ">Iraq</option>
-	<option value="IRL">Ireland</option>
-	<option value="ISR">Israel</option>
-	<option value="ITA">Italy</option>
-	<option value="JAM">Jamaica</option>
-	<option value="JPN">Japan</option>
-	<option value="JOR">Jordan</option>
-	<option value="KAZ">Kazakhstan</option>
-	<option value="KEN">Kenya</option>
-	<option value="KIR">Kiribati</option>
-	<option value="KOR">Korea</option>
-	<option value="KWT">Kuwait</option>
-	<option value="KGZ">Kyrgyzstan</option>
-	<option value="LAO">Lao People's Democratic Republic</option>
-	<option value="LVA">Latvia</option>
-	<option value="LBN">Lebanon</option>
-	<option value="LSO">Lesotho</option>
-	<option value="LBR">Liberia</option>
-	<option value="LBY">Libya</option>
-	<option value="LTU">Lithuania</option>
-	<option value="LUX">Luxembourg</option>
-	<option value="MAC">Macao</option>
-	<option value="MKD">Macedonia, the former Yugoslav Republic of</option>
-	<option value="MDG">Madagascar</option>
-	<option value="MWI">Malawi</option>
-	<option value="MYS">Malaysia</option>
-	<option value="MDV">Maldives</option>
-	<option value="MLI">Mali</option>
-	<option value="MLT">Malta</option>
-	<option value="MHL">Marshall Islands</option>
-	<option value="MRT">Mauritania</option>
-	<option value="MUS">Mauritius</option>
-	<option value="MEX">Mexico</option>
-	<option value="FSM">Micronesia, Federated States of</option>
-	<option value="MDA">Moldova, Republic of</option>
-	<option value="MNG">Mongolia</option>
-	<option value="MNE">Montenegro</option>
-	<option value="MSR">Montserrat</option>
-	<option value="MAR">Morocco</option>
-	<option value="MOZ">Mozambique</option>
-	<option value="MMR">Myanmar</option>
-	<option value="NAM">Namibia</option>
-	<option value="NPL">Nepal</option>
-	<option value="NLD">Netherlands</option>
-	<option value="NCL">New Caledonia</option>
-	<option value="NZL">New Zealand</option>
-	<option value="NIC">Nicaragua</option>
-	<option value="NER">Niger</option>
-	<option value="NGA">Nigeria</option>
-	<option value="NOR">Norway</option>
-	<option value="OMN">Oman</option>
-	<option value="PAK">Pakistan</option>
-	<option value="PLW">Palau</option>
-	<option value="PSE">Palestinian Territory, Occupied</option>
-	<option value="PAN">Panama</option>
-	<option value="PNG">Papua New Guinea</option>
-	<option value="PRY">Paraguay</option>
-	<option value="PER">Peru</option>
-	<option value="PHL">Philippines</option>
-	<option value="POL">Poland</option>
-	<option value="PRT">Portugal</option>
-	<option value="PRI">Puerto Rico</option>
-	<option value="QAT">Qatar</option>
-	<option value="ROU">Romania</option>
-	<option value="RUS">Russian Federation</option>
-	<option value="RWA">Rwanda</option>
-	<option value="KNA">Saint Kitts and Nevis</option>
-	<option value="LCA">Saint Lucia</option>
-	<option value="VCT">Saint Vincent and the Grenadines</option>
-	<option value="WSM">Samoa</option>
-	<option value="STP">Sao Tome and Principe</option>
-	<option value="SAU">Saudi Arabia</option>
-	<option value="SEN">Senegal</option>
-	<option value="SRB">Serbia</option>
-	<option value="SYC">Seychelles</option>
-	<option value="SLE">Sierra Leone</option>
-	<option value="SGP">Singapore</option>
-	<option value="SXM">Sint Maarten (Dutch part)</option>
-	<option value="SVK">Slovakia</option>
-	<option value="SVN">Slovenia</option>
-	<option value="SLB">Solomon Islands</option>
-	<option value="ZAF">South Africa</option>
-	<option value="ESP">Spain</option>
-	<option value="LKA">Sri Lanka</option>
-	<option value="SDN">Sudan</option>
-	<option value="SUR">Suriname</option>
-	<option value="SWZ">Swaziland</option>
-	<option value="SWE">Sweden</option>
-	<option value="CHE">Switzerland</option>
-	<option value="SYR">Syrian Arab Republic</option>
-	<option value="TJK">Tajikistan</option>
-	<option value="THA">Thailand</option>
-    <option value="TZA">Tanzania</option>
-	<option value="TLS">Timor-Leste</option>
-	<option value="TGO">Togo</option>
-	<option value="TON">Tonga</option>
-	<option value="TTO">Trinidad and Tobago</option>
-	<option value="TUN">Tunisia</option>
-	<option value="TUR">Turkey</option>
-	<option value="TKM">Turkmenistan</option>
-	<option value="TUV">Tuvalu</option>
-	<option value="UGA">Uganda</option>
-	<option value="UKR">Ukraine</option>
-	<option value="GBR">United Kingdom</option>
-	<option value="USA">United States</option>
-	<option value="URY">Uruguay</option>
-	<option value="UZB">Uzbekistan</option>
-	<option value="VUT">Vanuatu</option>
-	<option value="VEN">Venezuela, Bolivarian Republic of</option>
-	<option value="YEM">Yemen</option>
-	<option value="ZMB">Zambia</option>
-</select>
-    </div>
-<div id='dashboard'></div>
-</body>
+	<meta charset="utf-8">
+	<head>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<title>Tourism Inbound and Outbound comparison</title>
+	</head>
+	<body><br>
+		<br>
+		<font size="+3" color="#9A0002"> <center><b><u>Tourism Inbound and Outbound comparison</b></u> </center></font>
+		<div id='country'>
+			<font size="4"> <right> <b>Choose a country for view the stat :<b> </center></font><br><br>
+			<select id ="List" onChange="calculate()">
+				<option selected value="AFG">Afghanistan</option>
+				<option value="ALB">Albania</option>
+				<option value="DZA">Algeria</option>
+				<option value="AGO">Angola</option>
+				<option value="AIA">Anguilla</option>
+				<option value="ATG">Antigua and Barbuda</option>
+				<option value="ARG">Argentina</option>
+				<option value="ARM">Armenia</option>
+				<option value="ABW">Aruba</option>
+				<option value="AUS">Australia</option>
+				<option value="AUT">Austria</option>
+				<option value="AZE">Azerbaijan</option>
+				<option value="BHS">Bahamas</option>
+				<option value="BHR">Bahrain</option>
+				<option value="BGD">Bangladesh</option>
+				<option value="BRB">Barbados</option>
+				<option value="BLR">Belarus</option>
+				<option value="BEL">Belgium</option>
+				<option value="BLZ">Belize</option>
+				<option value="BEN">Benin</option>
+				<option value="BMU">Bermuda</option>
+				<option value="BTN">Bhutan</option>
+				<option value="BOL">Bolivia</option>
+				<option value="BES">Bonaire</option>
+				<option value="BIH">Bosnia and Herzegovina</option>
+				<option value="BWA">Botswana</option>
+				<option value="BRA">Brazil</option>
+				<option value="BRN">Brunei Darussalam</option>
+				<option value="BGR">Bulgaria</option>
+				<option value="BFA">Burkina Faso</option>
+				<option value="BDI">Burundi</option>
+				<option value="KHM">Cambodia</option>
+				<option value="CMR">Cameroon</option>
+				<option value="CAN">Canada</option>
+				<option value="CPV">Cape Verde</option>
+				<option value="CAF">Central African Republic</option>
+				<option value="CHL">Chile</option>
+				<option value="CHN">China</option>
+				<option value="COL">Colombia</option>
+				<option value="COM">Comoros</option>
+				<option value="COG">Congo</option>
+				<option value="COD">Congo, the Democratic Republic of the</option>
+				<option value="CRI">Costa Rica</option>
+				<option value="CIV">Côte d'Ivoire</option>
+				<option value="HRV">Croatia</option>
+				<option value="CUB">Cuba</option>
+				<option value="CUW">Curaçao</option>
+				<option value="CYP">Cyprus</option>
+				<option value="CZE">Czech Republic</option>
+				<option value="DNK">Denmark</option>
+				<option value="DJI">Djibouti</option>
+				<option value="DMA">Dominica</option>
+				<option value="DOM">Dominican Republic</option>
+				<option value="ECU">Ecuador</option>
+				<option value="EGY">Egypt</option>
+				<option value="SLV">El Salvador</option>
+				<option value="EST">Estonia</option>
+				<option value="ETH">Ethiopia</option>
+				<option value="FJI">Fiji</option>
+				<option value="FIN">Finland</option>
+				<option value="FRA">France</option>
+				<option value="PYF">French Polynesia</option>
+				<option value="GAB">Gabon</option>
+				<option value="GMB">Gambia</option>
+				<option value="GEO">Georgia</option>
+				<option value="DEU">Germany</option>
+				<option value="GHA">Ghana</option>
+				<option value="GRC">Greece</option>
+				<option value="GRD">Grenada</option>
+				<option value="GTM">Guatemala</option>
+				<option value="GIN">Guinea</option>
+				<option value="GNB">Guinea-Bissau</option>
+				<option value="GUY">Guyana</option>
+				<option value="HTI">Haiti</option>
+				<option value="HND">Honduras</option>
+				<option value="HKG">Hong Kong</option>
+				<option value="HUN">Hungary</option>
+				<option value="ISL">Iceland</option>
+				<option value="IND">India</option>
+				<option value="IDN">Indonesia</option>
+				<option value="IRN">Iran</option>
+				<option value="IRQ">Iraq</option>
+				<option value="IRL">Ireland</option>
+				<option value="ISR">Israel</option>
+				<option value="ITA">Italy</option>
+				<option value="JAM">Jamaica</option>
+				<option value="JPN">Japan</option>
+				<option value="JOR">Jordan</option>
+				<option value="KAZ">Kazakhstan</option>
+				<option value="KEN">Kenya</option>
+				<option value="KIR">Kiribati</option>
+				<option value="KOR">Korea</option>
+				<option value="KWT">Kuwait</option>
+				<option value="KGZ">Kyrgyzstan</option>
+				<option value="LAO">Lao People's Democratic Republic</option>
+				<option value="LVA">Latvia</option>
+				<option value="LBN">Lebanon</option>
+				<option value="LSO">Lesotho</option>
+				<option value="LBR">Liberia</option>
+				<option value="LBY">Libya</option>
+				<option value="LTU">Lithuania</option>
+				<option value="LUX">Luxembourg</option>
+				<option value="MAC">Macao</option>
+				<option value="MKD">Macedonia, the former Yugoslav Republic of</option>
+				<option value="MDG">Madagascar</option>
+				<option value="MWI">Malawi</option>
+				<option value="MYS">Malaysia</option>
+				<option value="MDV">Maldives</option>
+				<option value="MLI">Mali</option>
+				<option value="MLT">Malta</option>
+				<option value="MHL">Marshall Islands</option>
+				<option value="MRT">Mauritania</option>
+				<option value="MUS">Mauritius</option>
+				<option value="MEX">Mexico</option>
+				<option value="FSM">Micronesia, Federated States of</option>
+				<option value="MDA">Moldova, Republic of</option>
+				<option value="MNG">Mongolia</option>
+				<option value="MNE">Montenegro</option>
+				<option value="MSR">Montserrat</option>
+				<option value="MAR">Morocco</option>
+				<option value="MOZ">Mozambique</option>
+				<option value="MMR">Myanmar</option>
+				<option value="NAM">Namibia</option>
+				<option value="NPL">Nepal</option>
+				<option value="NLD">Netherlands</option>
+				<option value="NCL">New Caledonia</option>
+				<option value="NZL">New Zealand</option>
+				<option value="NIC">Nicaragua</option>
+				<option value="NER">Niger</option>
+				<option value="NGA">Nigeria</option>
+				<option value="NOR">Norway</option>
+				<option value="OMN">Oman</option>
+				<option value="PAK">Pakistan</option>
+				<option value="PLW">Palau</option>
+				<option value="PSE">Palestinian Territory, Occupied</option>
+				<option value="PAN">Panama</option>
+				<option value="PNG">Papua New Guinea</option>
+				<option value="PRY">Paraguay</option>
+				<option value="PER">Peru</option>
+				<option value="PHL">Philippines</option>
+				<option value="POL">Poland</option>
+				<option value="PRT">Portugal</option>
+				<option value="PRI">Puerto Rico</option>
+				<option value="QAT">Qatar</option>
+				<option value="ROU">Romania</option>
+				<option value="RUS">Russian Federation</option>
+				<option value="RWA">Rwanda</option>
+				<option value="KNA">Saint Kitts and Nevis</option>
+				<option value="LCA">Saint Lucia</option>
+				<option value="VCT">Saint Vincent and the Grenadines</option>
+				<option value="WSM">Samoa</option>
+				<option value="STP">Sao Tome and Principe</option>
+				<option value="SAU">Saudi Arabia</option>
+				<option value="SEN">Senegal</option>
+				<option value="SRB">Serbia</option>
+				<option value="SYC">Seychelles</option>
+				<option value="SLE">Sierra Leone</option>
+				<option value="SGP">Singapore</option>
+				<option value="SXM">Sint Maarten (Dutch part)</option>
+				<option value="SVK">Slovakia</option>
+				<option value="SVN">Slovenia</option>
+				<option value="SLB">Solomon Islands</option>
+				<option value="ZAF">South Africa</option>
+				<option value="ESP">Spain</option>
+				<option value="LKA">Sri Lanka</option>
+				<option value="SDN">Sudan</option>
+				<option value="SUR">Suriname</option>
+				<option value="SWZ">Swaziland</option>
+				<option value="SWE">Sweden</option>
+				<option value="CHE">Switzerland</option>
+				<option value="SYR">Syrian Arab Republic</option>
+				<option value="TJK">Tajikistan</option>
+				<option value="THA">Thailand</option>
+				<option value="TZA">Tanzania</option>
+				<option value="TLS">Timor-Leste</option>
+				<option value="TGO">Togo</option>
+				<option value="TON">Tonga</option>
+				<option value="TTO">Trinidad and Tobago</option>
+				<option value="TUN">Tunisia</option>
+				<option value="TUR">Turkey</option>
+				<option value="TKM">Turkmenistan</option>
+				<option value="TUV">Tuvalu</option>
+				<option value="UGA">Uganda</option>
+				<option value="UKR">Ukraine</option>
+				<option value="GBR">United Kingdom</option>
+				<option value="USA">United States</option>
+				<option value="URY">Uruguay</option>
+				<option value="UZB">Uzbekistan</option>
+				<option value="VUT">Vanuatu</option>
+				<option value="VEN">Venezuela, Bolivarian Republic of</option>
+				<option value="YEM">Yemen</option>
+				<option value="ZMB">Zambia</option>
+			</select>
+		</div>
+		<div id='dashboard'></div>
+	</body>
 </html>
+
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
-function dashboard(id, fData){
-    var barColor = '#800026';  //Colore barra fissa
-    function segColor(c){ return {inbound:"#fd8d3c", outbound:"#ffeda0"}[c]; }  //colori pieChart 
-    
-    // compute total for each state.
-    fData.forEach(function(d){d.total=parseInt(d.freq.inbound)+parseInt(d.freq.outbound)});
-    
-    // function to handle histogram.
-    function histoGram(fD){
-        var hG={},    hGDim = {t: 60, r: 0, b: 30, l: 0};
-      /* hGDim.w = 500 - hGDim.l - hGDim.r, 
-        hGDim.h = 300 - hGDim.t - hGDim.b;
-      */  
-	 	hGDim.w = document.getElementById('dashboard').offsetWidth;
-		hGDim.h = hGDim.w / 10;
-		    
-        //create svg for histogram.
-        var hGsvg = d3.select(id).append("svg")
-            .attr("width", hGDim.w + hGDim.l + hGDim.r)
-            .attr("height", hGDim.h + hGDim.t + hGDim.b).append("g")
-            .attr("transform", "translate(" + hGDim.l + "," + hGDim.t + ")");
+	function dashboard(id, fData) {
+		var barColor = '#800026';  //Colore barra fissa
+		function segColor(c){ return {inbound:"#fd8d3c", outbound:"#ffeda0"}[c]; }  //colori pieChart 
+		
+		// compute total for each state.
+		fData.forEach(function(d){d.total=parseInt(d.freq.inbound)+parseInt(d.freq.outbound)});
+		
+		// function to handle histogram.
+		function histoGram(fD){
+			var hG={},    hGDim = {t: 60, r: 0, b: 30, l: 0};
+			hGDim.w = document.getElementById('dashboard').offsetWidth;
+			hGDim.h = hGDim.w / 10;
+				
+			//create svg for histogram.
+			var hGsvg = d3.select(id).append("svg")
+				.attr("width", hGDim.w + hGDim.l + hGDim.r)
+				.attr("height", hGDim.h + hGDim.t + hGDim.b).append("g")
+				.attr("transform", "translate(" + hGDim.l + "," + hGDim.t + ")");
 
-        // create function for x-axis mapping.
-        var x = d3.scale.ordinal().rangeRoundBands([0, hGDim.w], 0.1)
-                .domain(fD.map(function(d) { return d[0]; }));
+			// create function for x-axis mapping.
+			var x = d3.scale.ordinal().rangeRoundBands([0, hGDim.w], 0.1)
+				.domain(fD.map(function(d) { return d[0]; }));
 
-        // Add x-axis to the histogram svg.
-        hGsvg.append("g").attr("class", "x axis")
-            .attr("transform", "translate(0," + hGDim.h + ")")
-            .call(d3.svg.axis().scale(x).orient("bottom"));
+			// Add x-axis to the histogram svg.
+			hGsvg.append("g").attr("class", "x axis")
+				.attr("transform", "translate(0," + hGDim.h + ")")
+				.call(d3.svg.axis().scale(x).orient("bottom"));
 
-        // Create function for y-axis map.
-        var y = d3.scale.linear().range([hGDim.h, 0])
-                .domain([0, d3.max(fD, function(d) { return d[1]; })]);
+			// Create function for y-axis map.
+			var y = d3.scale.linear().range([hGDim.h, 0])
+					.domain([0, d3.max(fD, function(d) { return d[1]; })]);
 
-        // Create bars for histogram to contain rectangles and freq labels.
-        var bars = hGsvg.selectAll(".bar").data(fD).enter()
-                .append("g").attr("class", "bar");
-        
-        //create the rectangles.
-        bars.append("rect")
-            .attr("x", function(d) { return x(d[0]); })
-            .attr("y", function(d) { return y(d[1]); })
-            .attr("width", x.rangeBand())
-            .attr("height", function(d) { return hGDim.h - y(d[1]); })
-            .attr('fill',barColor)
-            .on("mouseover",mouseover)// mouseover is defined below.
-            .on("mouseout",mouseout);// mouseout is defined below.
-            
-        //Create the frequency labels above the rectangles.
-        bars.append("text").text(function(d){ return d3.format(",")(d[1])})
-            .attr("x", function(d) { return x(d[0])+x.rangeBand()/2; })
-            .attr("y", function(d) { return y(d[1])-5; })
-            .attr("text-anchor", "middle");
-        
-        function mouseover(d){  // utility function to be called on mouseover.
-            // filter for selected state.
-            var st = fData.filter(function(s){ return s.Year == d[0];})[0],
-                nD = d3.keys(st.freq).map(function(s){ return {type:s, freq:st.freq[s]};});
-               
-            // call update functions of pie-chart and legend.    
-            pC.update(nD);
-            leg.update(nD);
-        }
-        
-        function mouseout(d){    // utility function to be called on mouseout.
-            // reset the pie-chart and legend.    
-            pC.update(tF);
-            leg.update(tF);
-        }
-        
-        // create function to update the bars. This will be used by pie-chart.
-        hG.update = function(nD, color){
-            // update the domain of the y-axis map to reflect change in frequencies.
-            y.domain([0, d3.max(nD, function(d) { return d[1]-5; })]);
-            
-            // Attach the new data to the bars.
-            var bars = hGsvg.selectAll(".bar").data(nD);
-            
-            // transition the height and color of rectangles.
-            bars.select("rect").transition().duration(500)
-                .attr("y", function(d) {return y(d[1]); })
-                .attr("height", function(d) { return hGDim.h - y(d[1]); })
-                .attr("fill", color);
+			// Create bars for histogram to contain rectangles and freq labels.
+			var bars = hGsvg.selectAll(".bar").data(fD).enter()
+						.append("g").attr("class", "bar");
+			
+			//create the rectangles.
+			bars.append("rect")
+				.attr("x", function(d) { return x(d[0]); })
+				.attr("y", function(d) { return y(d[1]); })
+				.attr("width", x.rangeBand())
+				.attr("height", function(d) { return hGDim.h - y(d[1]); })
+				.attr('fill',barColor)
+				.on("mouseover",mouseover)// mouseover is defined below.
+				.on("mouseout",mouseout);// mouseout is defined below.
+				
+			//Create the frequency labels above the rectangles.
+			bars.append("text").text(function(d){ return d3.format(",")(d[1])})
+				.attr("x", function(d) { return x(d[0])+x.rangeBand()/2; })
+				.attr("y", function(d) { return y(d[1])-5; })
+				.attr("text-anchor", "middle");
+			
+			function mouseover(d){  // utility function to be called on mouseover.
+				// filter for selected state.
+				var st = fData.filter(function(s){ return s.Year == d[0];})[0],
+					nD = d3.keys(st.freq).map(function(s){ return {type:s, freq:st.freq[s]};});
+				
+				// call update functions of pie-chart and legend.    
+				pC.update(nD);
+				leg.update(nD);
+			}
+			
+			function mouseout(d){    // utility function to be called on mouseout.
+				// reset the pie-chart and legend.    
+				pC.update(tF);
+				leg.update(tF);
+			}
+			
+			// create function to update the bars. This will be used by pie-chart.
+			hG.update = function(nD, color){
+				// update the domain of the y-axis map to reflect change in frequencies.
+				y.domain([0, d3.max(nD, function(d) { return d[1]-5; })]);
+				
+				// Attach the new data to the bars.
+				var bars = hGsvg.selectAll(".bar").data(nD);
+				
+				// transition the height and color of rectangles.
+				bars.select("rect").transition().duration(500)
+					.attr("y", function(d) {return y(d[1]); })
+					.attr("height", function(d) { return hGDim.h - y(d[1]); })
+					.attr("fill", color);
 
-            // transition the frequency labels location and change value.
-            bars.select("text").transition().duration(500)
-                .text(function(d){ return d3.format(",")(d[1])})
-                .attr("y", function(d) {return y(d[1])-5; });            
-        }        
-        return hG;
-    }
-    
-    // function to handle pieChart.
-    function pieChart(pD){
-        var pC ={},    pieDim ={w:250, h: 250};
-        pieDim.r = Math.min(pieDim.w, pieDim.h) / 2;
-                
-        // create svg for pie chart.
-        var piesvg = d3.select(id).append("svg")
-            .attr("width", pieDim.w).attr("height", pieDim.h).append("g")
-            .attr("transform", "translate(" +pieDim.w/2+","+pieDim.h/2+")");
-        
-        // create function to draw the arcs of the pie slices.
-        var arc = d3.svg.arc().outerRadius(pieDim.r - 10).innerRadius(0);
+				// transition the frequency labels location and change value.
+				bars.select("text").transition().duration(500)
+					.text(function(d){ return d3.format(",")(d[1])})
+					.attr("y", function(d) {return y(d[1])-5; });            
+			}        
+			return hG;
+		}
+		
+		// function to handle pieChart.
+		function pieChart(pD){
+			var pC ={},    pieDim ={w:250, h: 250};
+			pieDim.r = Math.min(pieDim.w, pieDim.h) / 2;
+					
+			// create svg for pie chart.
+			var piesvg = d3.select(id).append("svg")
+				.attr("width", pieDim.w).attr("height", pieDim.h).append("g")
+				.attr("transform", "translate(" +pieDim.w/2+","+pieDim.h/2+")");
+			
+			// create function to draw the arcs of the pie slices.
+			var arc = d3.svg.arc().outerRadius(pieDim.r - 10).innerRadius(0);
 
-        // create a function to compute the pie slice angles.
-        var pie = d3.layout.pie().sort(null).value(function(d) { return d.freq; });
+			// create a function to compute the pie slice angles.
+			var pie = d3.layout.pie().sort(null).value(function(d) { return d.freq; });
 
-        // Draw the pie slices.
-        piesvg.selectAll("path").data(pie(pD)).enter().append("path").attr("d", arc)
-            .each(function(d) { this._current = d; })
-            .style("fill", function(d) { return segColor(d.data.type); })
-            .on("mouseover",mouseover).on("mouseout",mouseout);
+			// Draw the pie slices.
+			piesvg.selectAll("path").data(pie(pD)).enter().append("path").attr("d", arc)
+				.each(function(d) { this._current = d; })
+				.style("fill", function(d) { return segColor(d.data.type); })
+				.on("mouseover",mouseover).on("mouseout",mouseout);
 
-        // create function to update pie-chart. This will be used by histogram.
-        pC.update = function(nD){
-            piesvg.selectAll("path").data(pie(nD)).transition().duration(500)
-                .attrTween("d", arcTween);
-        }        
-        // Utility function to be called on mouseover a pie slice.
-        function mouseover(d){
-            // call the update function of histogram with new data.
-            hG.update(fData.map(function(v){ 
-                return [v.Year,v.freq[d.data.type]];}),segColor(d.data.type));
-        }
-        //Utility function to be called on mouseout a pie slice.
-        function mouseout(d){
-            // call the update function of histogram with all data.
-            hG.update(fData.map(function(v){
-                return [v.Year,v.total];}), barColor);
-        }
-        // Animating the pie-slice requiring a custom function which specifies
-        // how the intermediate paths should be drawn.
-        function arcTween(a) {
-            var i = d3.interpolate(this._current, a);
-            this._current = i(0);
-            return function(t) { return arc(i(t));    };
-        }    
-        return pC;
-    }
-    
-    // function to handle legend.
-    function legend(lD){
-        var leg = {};
-            
-        // create table for legend.
-        var legend = d3.select(id).append("table").attr('class','legend');
-        
-        // create one row per segment.
-        var tr = legend.append("tbody").selectAll("tr").data(lD).enter().append("tr");
-            
-        // create the first column for each segment.
-        tr.append("td").append("svg").attr("width", '16').attr("height", '16').append("rect")
-            .attr("width", '16').attr("height", '16')
-			.attr("fill",function(d){ return segColor(d.type); });
-            
-        // create the second column for each segment.
-        tr.append("td").text(function(d){ return d.type;});
+			// create function to update pie-chart. This will be used by histogram.
+			pC.update = function(nD){
+				piesvg.selectAll("path").data(pie(nD)).transition().duration(500)
+					.attrTween("d", arcTween);
+			}        
+			// Utility function to be called on mouseover a pie slice.
+			function mouseover(d){
+				// call the update function of histogram with new data.
+				hG.update(fData.map(function(v){ 
+					return [v.Year,v.freq[d.data.type]];}),segColor(d.data.type));
+			}
+			//Utility function to be called on mouseout a pie slice.
+			function mouseout(d){
+				// call the update function of histogram with all data.
+				hG.update(fData.map(function(v){
+					return [v.Year,v.total];}), barColor);
+			}
+			// Animating the pie-slice requiring a custom function which specifies
+			// how the intermediate paths should be drawn.
+			function arcTween(a) {
+				var i = d3.interpolate(this._current, a);
+				this._current = i(0);
+				return function(t) { return arc(i(t));    };
+			}    
+			return pC;
+		}
+		
+		// function to handle legend.
+		function legend(lD){
+			var leg = {};
+				
+			// create table for legend.
+			var legend = d3.select(id).append("table").attr('class','legend');
+			
+			// create one row per segment.
+			var tr = legend.append("tbody").selectAll("tr").data(lD).enter().append("tr");
+				
+			// create the first column for each segment.
+			tr.append("td").append("svg").attr("width", '16').attr("height", '16').append("rect")
+				.attr("width", '16').attr("height", '16')
+				.attr("fill",function(d){ return segColor(d.type); });
+				
+			// create the second column for each segment.
+			tr.append("td").text(function(d){ return d.type;});
 
-        // create the third column for each segment.
-        tr.append("td").attr("class",'legendFreq')
-            .text(function(d){ return d3.format(",")(d.freq);});
+			// create the third column for each segment.
+			tr.append("td").attr("class",'legendFreq')
+				.text(function(d){ return d3.format(",")(d.freq);});
 
-        // create the fourth column for each segment.
-        tr.append("td").attr("class",'legendPerc')
-            .text(function(d){ return getLegend(d,lD);});
+			// create the fourth column for each segment.
+			tr.append("td").attr("class",'legendPerc')
+				.text(function(d){ return getLegend(d,lD);});
 
-        // Utility function to be used to update the legend.
-        leg.update = function(nD){
-            // update the data attached to the row elements.
-            var l = legend.select("tbody").selectAll("tr").data(nD);
+			// Utility function to be used to update the legend.
+			leg.update = function(nD){
+				// update the data attached to the row elements.
+				var l = legend.select("tbody").selectAll("tr").data(nD);
 
-            // update the frequencies.
-            l.select(".legendFreq").text(function(d){ return d3.format(",")(d.freq);});
+				// update the frequencies.
+				l.select(".legendFreq").text(function(d){ return d3.format(",")(d.freq);});
 
-            // update the percentage column.
-            l.select(".legendPerc").text(function(d){ return getLegend(d,nD);});        
-        }
-        
-        function getLegend(d,aD){ // Utility function to compute percentage.
-            return d3.format("%")(d.freq/d3.sum(aD.map(function(v){ return v.freq; })));
-        }
+				// update the percentage column.
+				l.select(".legendPerc").text(function(d){ return getLegend(d,nD);});        
+			}
+			
+			function getLegend(d,aD){ // Utility function to compute percentage.
+				return d3.format("%")(d.freq/d3.sum(aD.map(function(v){ return v.freq; })));
+			}
 
-        return leg;
-    }
-    
-    // calculate total frequency by segment for all state.
-    var tF = ['inbound','outbound'].map(function(d){ 				//DEFINIRE I DATI
-        return {type:d, freq: d3.sum(fData.map(function(t){ return t.freq[d];}))}; 
-    });    
-    
-    // calculate total frequency by state for all segment.
-    var sF = fData.map(function(d){return [d.Year,d.total];});
+			return leg;
+		}
+		
+		// calculate total frequency by segment for all state.
+		var tF = ['inbound','outbound'].map(function(d){ 				//DEFINIRE I DATI
+			return {type:d, freq: d3.sum(fData.map(function(t){ return t.freq[d];}))}; 
+		});    
+		
+		// calculate total frequency by state for all segment.
+		var sF = fData.map(function(d){return [d.Year,d.total];});
 
-    var hG = histoGram(sF), // create the histogram.
-        pC = pieChart(tF), // create the pie-chart.
-        leg= legend(tF);  // create the legend.
-}
+		var hG = histoGram(sF), // create the histogram.
+			pC = pieChart(tF), // create the pie-chart.
+			leg= legend(tF);  // create the legend.
+	}
 </script>
+
 <script>
-function calculate(y){
-document.getElementById("dashboard").innerHTML =" ";
-var temp= document.getElementById("List");
-var x=temp.options[temp.selectedIndex].value; //è la nazione selezionata
+	function calculate(y){
+		document.getElementById("dashboard").innerHTML =" ";
+		var temp= document.getElementById("List");
+		var x=temp.options[temp.selectedIndex].value; //è la nazione selezionata
 
-console.log("primo "+x);
+		console.log("primo "+x);
 
-	d3.csv("inbound_outbound.csv", function(data) {
-		data.forEach(function(d){
-			console.log("secondo "+d.iso3);
+		d3.csv("data/inbound_outbound.csv", function(data) {
+			data.forEach(function(d){
+				console.log("secondo "+d.iso3);
 				var freqData=[];
 				for(var i = 0; i < 20; i++){
 					var anno=i+1995;
-	freqData.push({Year:(anno), freq:{inbound:d[anno], outbound:d[y+anno]}});
+					freqData.push({Year:(anno), freq:{inbound:d[anno], outbound:d[y+anno]}});
 				}
-	console.log(freqData);
-	if(d.iso3==x){
-	dashboard('#dashboard',freqData);
-	}
+				console.log(freqData);
+				if(d.iso3==x){
+					dashboard('#dashboard',freqData);
+				}
+			});
 		});
-	});
-		}
+	}
 </script>
-
