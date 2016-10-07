@@ -4,13 +4,13 @@
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
 		<title>Tourism Inbound and Outbound comparison</title>
 	</head>
-	<body><br>
+	<body onload="calculate()"><br>
 		<br>
 		<font size="+3" color="#9A0002"> <center><b><u>Tourism Inbound and Outbound comparison</b></u> </center></font>
 		<div id='country'>
-			<font size="4"> <right> <b>Choose a country for view the stat :<b> </center></font><br><br>
+			<font size="4"> <right> <b>Select a country:<b> </center></font><br><br>
 			<select id ="List" onChange="calculate()">
-				<option selected value="AFG">Afghanistan</option>
+				<option value="AFG">Afghanistan</option>
 				<option value="ALB">Albania</option>
 				<option value="DZA">Algeria</option>
 				<option value="AGO">Angola</option>
@@ -94,7 +94,7 @@
 				<option value="IRQ">Iraq</option>
 				<option value="IRL">Ireland</option>
 				<option value="ISR">Israel</option>
-				<option value="ITA">Italy</option>
+				<option selected value="ITA">Italy</option>
 				<option value="JAM">Jamaica</option>
 				<option value="JPN">Japan</option>
 				<option value="JOR">Jordan</option>
