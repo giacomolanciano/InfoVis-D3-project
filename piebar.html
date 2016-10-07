@@ -215,7 +215,7 @@
 		function segColor(c){ return {inbound:"#fd8d3c", outbound:"#ffeda0"}[c]; }  //colori pieChart 
 		
 		// compute total for each state.
-		fData.forEach(function(d){d.total=parseInt(d.freq.inbound)+parseInt(d.freq.outbound)});
+		fData.forEach(function(d){d.total=parseInt(d.freq.inbound) + parseInt(d.freq.outbound)});
 		
 		// function to handle histogram.
 		function histoGram(fD){
@@ -422,7 +422,7 @@
 				var freqData=[];
 				for(var i = 0; i < 20; i++){
 					var anno=i+1995;
-					freqData.push({Year:(anno), freq:{inbound:d[anno], outbound:d[y+anno]}});
+					freqData.push({Year:(anno), freq:{inbound:d[anno], outbound:d["o"+anno.toString()]}});
 				}
 				console.log(freqData);
 				if(d.iso3==x){
