@@ -2,14 +2,14 @@
 	<meta charset="utf-8">
 	<head>
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
-		<title>Tourism Inbound and Outbound comparison</title>
+		<title>Inbound and outbound tourism comparison (US$)</title>
 	</head>
-	<body onload="calculate()"><br>
+	<body onload="updateData()"><br>
 		<br>
-		<font size="+3" color="#9A0002"> <center><b><u>Tourism Inbound and Outbound comparison</b></u> </center></font>
-		<div id='country'>
-			<font size="4"> <right> <b>Select a country:<b> </center></font><br><br>
-			<select id ="List" onChange="calculate()">
+		<font size="+3" > <center><b>Inbound and outbound tourism comparison (US$)</b> </center></font>
+		<div id='country' align="left">
+			<font size="4"> <right> <b>Select a country:<b> </center></font><br>
+			<select id ="List" onChange="updateData()">
 				<option value="AFG">Afghanistan</option>
 				<option value="ALB">Albania</option>
 				<option value="DZA">Algeria</option>
@@ -51,7 +51,7 @@
 				<option value="COL">Colombia</option>
 				<option value="COM">Comoros</option>
 				<option value="COG">Congo</option>
-				<option value="COD">Congo, the Democratic Republic of the</option>
+				<option value="COD">Congo (the Democratic Republic of the)</option>
 				<option value="CRI">Costa Rica</option>
 				<option value="CIV">Côte d'Ivoire</option>
 				<option value="HRV">Croatia</option>
@@ -113,7 +113,7 @@
 				<option value="LTU">Lithuania</option>
 				<option value="LUX">Luxembourg</option>
 				<option value="MAC">Macao</option>
-				<option value="MKD">Macedonia, the former Yugoslav Republic of</option>
+				<option value="MKD">Macedonia (the former Yugoslav Republic of<)/option>
 				<option value="MDG">Madagascar</option>
 				<option value="MWI">Malawi</option>
 				<option value="MYS">Malaysia</option>
@@ -124,7 +124,7 @@
 				<option value="MRT">Mauritania</option>
 				<option value="MUS">Mauritius</option>
 				<option value="MEX">Mexico</option>
-				<option value="FSM">Micronesia, Federated States of</option>
+				<option value="FSM">Micronesia (Federated States of)</option>
 				<option value="MDA">Moldova, Republic of</option>
 				<option value="MNG">Mongolia</option>
 				<option value="MNE">Montenegro</option>
@@ -199,12 +199,13 @@
 				<option value="URY">Uruguay</option>
 				<option value="UZB">Uzbekistan</option>
 				<option value="VUT">Vanuatu</option>
-				<option value="VEN">Venezuela, Bolivarian Republic of</option>
+				<option value="VEN">Venezuela (Bolivarian Republic of)</option>
 				<option value="YEM">Yemen</option>
 				<option value="ZMB">Zambia</option>
 			</select>
 		</div>
 		<div id='dashboard'></div>
+		<p>Data source: <a href="https://knoema.com/WTODB2016/world-tourism-organization-database-2016">World Tourism Organization Database 2016</a></p>
 	</body>
 </html>
 
@@ -409,7 +410,7 @@
 </script>
 
 <script>
-	function calculate(y){
+	function updateData(y){
 		document.getElementById("dashboard").innerHTML =" ";
 		var temp= document.getElementById("List");
 		var x=temp.options[temp.selectedIndex].value; //è la nazione selezionata

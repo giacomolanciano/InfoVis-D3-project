@@ -1,21 +1,21 @@
 <!doctype html>
     <head>
         <meta charset="utf-8">
-        <title>Tourism expenditure over the years (1995-2014)</title>
+        <title>Tourism expenditure (US$) over the years (1995-2014)</title>
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
         <link href="css/d3.geomap.css" rel="stylesheet">
         </head>
     <body>
         <div class="container" id="main">
-            <h1 class="pull-left">Tourism expenditure over the years (1995-2014)</h1>
+            <h1 class="pull-left">Tourism expenditure (US$) over the years (1995-2014)</h1>
             <div class="pull-right" style="margin-top: 1.5em;">
                 <select class="form-control" id="map-select">
                     <option value="2014">2014</option>
                     <option value="2013">2013</option>
                     <option value="2012">2012</option>
                     <option value="2011">2011</option>
-                    <option value="2010">2010</option>
+                    <option selected value="2010">2010</option>
                     <option value="2009">2009</option>
                     <option value="2008">2008</option>
                     <option value="2007">2007</option>
@@ -44,7 +44,7 @@
             var worldmap = d3.geomap.choropleth()
                 .geofile('topojson/world/countries.json')
                 .colors(colorbrewer.YlOrRd[9])
-                .column('2014')
+                .column('2010')
                 .duration(500)
                 .format(d3.format(',.02f'))
                 .legend(true)
