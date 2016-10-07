@@ -1,5 +1,11 @@
 #!/bin/python
 
+"""
+NOTE: 
+This script is no longer used, since the output is not complete.
+Refer to inbound_standalone.csv and outbound_standalone.csv
+"""
+
 START_YEAR = 1995
 END_YEAR = 2014
 ISO_IN_FILE = "iso_code.csv"
