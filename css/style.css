@@ -18,7 +18,9 @@ path:hover {
 	  
 rect:hover {
 	  fill:red; 
+	  
 	  }
+	  
 	  
 .axis {
 	  font: 10px sans-serif; 
@@ -47,7 +49,7 @@ rect:hover {
 	  
 .legend{
 	align:center;
-    margin-bottom:100px;
+    margin-bottom:60px;
 	margin-right:60px;
     display:inline-block;
     border-collapse: collapse;
