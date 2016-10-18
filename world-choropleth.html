@@ -34,10 +34,39 @@
                     <option value="1995">1995</option>
                 </select>
             </div> 
-                                    <div id="map"></div>
+            <div id="map"></div>
 
             
-            <div id='country' align="left">
+            
+         <!--   <div class="range-slider" data-slider data-options="start: 1995; end: 2014;">
+                <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                <span class="range-slider-active-segment"></span>
+                <input type="hidden">
+			</div>
+
+            <script src="js/vendor/jquery.js"></script>
+ 			<script src="js/foundation/foundation.js"></script>
+ 			<script src="js/foundation/foundation.slider.js"></script>
+            
+
+			  <script>
+               $(document).foundation({
+                
+              slider: { 
+                on_change: function(){
+                  // do something when the value changes
+                  worldmap.column($('#slider').attr('data-slider')).update();
+            
+                }
+              }
+            });
+                var new_value = 3;
+                $('.range-slider').foundation('slider', 'set_value', new_value);
+              </script> -->
+        </div>
+
+		<br><br><font size="+3" > <center><b>Inbound and outbound tourism balance (US$ Mn)</b> </center></font>
+		<div id='country' align="left">
 			<font size="4"> <right> <b>Select a country:<b> </center></font><br>
 			<select id ="List" onChange="updateData()">
 				<option value="AFG">Afghanistan</option>
@@ -234,35 +263,8 @@
 				<option value="ZMB">Zambia</option>
 			</select>
 		</div>
-         <!--   <div class="range-slider" data-slider data-options="start: 1995; end: 2014;">
-                <span class="range-slider-handle" role="slider" tabindex="0"></span>
-                <span class="range-slider-active-segment"></span>
-                <input type="hidden">
-			</div>
-
-            <script src="js/vendor/jquery.js"></script>
- 			<script src="js/foundation/foundation.js"></script>
- 			<script src="js/foundation/foundation.slider.js"></script>
-            
-
-			  <script>
-               $(document).foundation({
-                
-              slider: { 
-                on_change: function(){
-                  // do something when the value changes
-                  worldmap.column($('#slider').attr('data-slider')).update();
-            
-                }
-              }
-            });
-                var new_value = 3;
-                $('.range-slider').foundation('slider', 'set_value', new_value);
-              </script> -->
-                                </div>
-
-          <div id='dashboard'></div><br><br><br>
-          <p>Data source: <a href="https://knoema.com/WTODB2016/world-tourism-organization-database-2016">World Tourism Organization Database 2016</a></p>
+		<div id='dashboard'></div><br><br><br>
+		<p>Data source: <a href="https://knoema.com/WTODB2016/world-tourism-organization-database-2016">World Tourism Organization Database 2016</a></p>
 
         <script src="node_modules/d3/d3.min.js"></script>
         <script src="node_modules/d3-geo-projection/d3.geo.projection.min.js"></script>
@@ -305,13 +307,8 @@
                     .attr('width', '100%')
                     .attr('height', anno_height)
                     .attr('transform', 'translate(0,' + (worldmap.height() - anno_height) + ')')
-					
-				
-
             }
 			
-			
-
         </script>
         
         
