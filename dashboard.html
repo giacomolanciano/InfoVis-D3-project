@@ -1,7 +1,7 @@
 <!doctype html>
     <head>
         <meta charset="utf-8">
-        <title>Tourism expenditure (US$ Mn) over the years (1995-2014)</title>
+        <title>Dashboard</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/d3.geomap.css" rel="stylesheet">
@@ -241,14 +241,6 @@
                     .call(worldmap.draw, worldmap);
             });
 
-            /* replace spinner with slider for year selection
-
-			d3.select('#map-select').on('change', function() {
-                worldmap.column(this.value).update()
-            });
-			*/
-
-			// slider
 			d3.select('#slider').call(d3.slider()
 										.axis(true).min(1995).max(2014).step(1)
 										.on("slide", function(evt, value) { worldmap.column(value).update(); })
