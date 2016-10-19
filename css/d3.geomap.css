@@ -1,3 +1,5 @@
+/* d3.geomap.css */
+
 text {
   fill: #333;
   font-size: 12px; }
@@ -33,5 +35,3 @@ div.tooltip {
   border-radius: 8px;           
   pointer-events: none;         
 } 
-
-/*# sourceMappingURL=geomap.css.map */
