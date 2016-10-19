@@ -14,13 +14,7 @@ path {
 
 path:hover {
 	  opacity:0.9; 
-	  }
-	  
-rect:hover {
-	  fill:red; 
-	  
-	  }
-	  
+	  }	  
 	  
 .axis {
 	  font: 10px sans-serif; 
