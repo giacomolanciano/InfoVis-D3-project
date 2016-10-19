@@ -17,7 +17,8 @@
             <div id="slider"></div> 
         </div>
 
-		<br><br><font size="+3" > <center><b>Inbound and outbound tourism balance (US$ Mn)</b> </center></font>
+		<br><br>
+		<h1 class="text-center">Inbound and outbound tourism balance (US$ Mn)</h1>
 		<div id='country' align="left">
 			<font size="4"> <right> <b>Select a country:<b> </center></font><br>
 			<select id ="List" onChange="updateData()">
@@ -216,7 +217,7 @@
 			</select>
 		</div>
 		<div id='dashboard'></div><br><br><br>
-		<p>Data source: <a href="https://knoema.com/WTODB2016/world-tourism-organization-database-2016">World Tourism Organization Database 2016</a></p>
+		<div id='data-reference'><p>Data source: <a href="https://knoema.com/WTODB2016/world-tourism-organization-database-2016">World Tourism Organization Database 2016</a></p></div>
 
         <script src="node_modules/d3/d3.min.js"></script>
         <script src="node_modules/d3-geo-projection/d3.geo.projection.min.js"></script>
@@ -243,11 +244,11 @@
                     .call(worldmap.draw, worldmap);
             });
 
-			d3.select('#slider').call(
-				d3.slider()
-					.axis(true).min(1995).max(2014).step(1)
+			var slider = d3.slider()
+					.axis(true).min(1995).max(2014).step(1).value(2010)
 					.on("slide", function(evt, value) { worldmap.column(value).update(); })
-			);
+			
+			d3.select('#slider').call(slider);
 
             function annotation() {
                 var anno_height = 60;
@@ -315,6 +316,7 @@
 						.on("mouseout",mouseout)// mouseout is defined below.
 						.on('click', function(d) {
 							worldmap.column(d[0]).update()
+							slider.value(d[0])
 						});
 			
 					//Create the frequency labels above the rectangles.
@@ -331,6 +333,10 @@
 						// call update functions of pie-chart and legend.    
 						pC.update(nD);
 						leg.update(nD);
+
+						// update map
+						worldmap.column(d[0]).update()
+						slider.value(d[0])
 					}
 					
 					function mouseout(d){    // utility function to be called on mouseout.

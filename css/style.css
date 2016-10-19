@@ -69,13 +69,18 @@ rect:hover {
 #country{
 	text-align:left;
 	margin-top:30px;
-	margin-left:30px;
-	
+	margin-left:555px;
 }
 
 #dashboard{
 	text-align:center;
 	border-bottom-color:#000000;
+}
+
+#data-reference{
+	text-align:left;
+	margin-top:30px;
+	margin-left:555px;
 }
 
 
