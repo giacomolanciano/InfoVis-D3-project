@@ -243,9 +243,10 @@
                     .call(worldmap.draw, worldmap);
             });
 
-			d3.select('#slider').call(d3.slider()
-										.axis(true).min(1995).max(2014).step(1)
-										.on("slide", function(evt, value) { worldmap.column(value).update(); })
+			d3.select('#slider').call(
+				d3.slider()
+					.axis(true).min(1995).max(2014).step(1)
+					.on("slide", function(evt, value) { worldmap.column(value).update(); })
 			);
 
             function annotation() {
@@ -254,8 +255,6 @@
                 // Remove possibly existing annotation, when map is updated.
                 worldmap.svg.selectAll('g.annotation').remove();
 				
-				
-
                 fg = worldmap.svg.append('g')
                     .attr('class', 'annotation')
                     .attr('width', '100%')
@@ -264,7 +263,6 @@
             }
 			
         </script>
-        
         
         <script src="js/d3.v3.min.js"></script>
 		<script>
